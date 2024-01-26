@@ -13,17 +13,18 @@ int main(){
         printf("ADD\nSUBTRACT\nMULTIPLY\nDIVIDE\n");
         scanf("%s",&operation);
         if (strcmp(operation,"ADD")==0){
-            a = '+';
+            a ='+';
             printf("enter the first no");
             do
             {
             scanf("%f",&n);
             box=box+n;
             printf("if you want to add more no inout + else =");
-            scanf(" %c", &a);
-            }while(a == '+SU');
-            printf("the total sum is %f ",box);
+            scanf(" %c",&a);
+            }while(a == '+');
+            printf("the total sum is %f \n ",box);
         }
+        printf("to do some calculation again input 'c' else 'x' ");
         scanf("%s",&ch);
     }
     return 0;
