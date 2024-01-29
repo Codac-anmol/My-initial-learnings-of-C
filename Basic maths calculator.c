@@ -24,6 +24,22 @@ int main(){
             }while(a == '+');
             printf("the total sum is %f \n ",box);
         }
+        else if (strcmp(operation),"SUBTRACT")
+        {
+            printf("enter the first no from which you want to subtract");
+            a = '-';
+            scanf("%f",&box);
+            do 
+            {
+            scanf("%f",&n);
+            box=box-n;
+            printf("if you want to subtract more no input - else =");
+            scanf(" %c",&a);
+            }while(a == '-');
+            printf("the and of subtraction and the no is %f \n ");   
+        }
+    
+        
         printf("to do some calculation again input 'c' else 'x' ");
         scanf("%s",&ch);
     }
