@@ -47,8 +47,8 @@ int main(){
         printf("please enter next operator to calculate or c to exit ");
         scanf("%c",&operat);
     }
-    if ( operat == 'c'){
-        exitcontrol=='x';
+    if ( operat == 'x'){
+        exitcontrol='x';
     }
    } while (exitcontrol == 'c' ); 
    printf("the final value is %f ",box);
